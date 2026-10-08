@@ -1,0 +1,78 @@
+name: Capturas reais do projeto
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/portfolio-screenshots.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  capturas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      SITE_URL: 'https://psijoycegandra.com.br/'
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+      - name: Preparar Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Instalar Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.0
+          npx playwright install --with-deps chromium
+      - name: Gerar capturas desktop e mobile
+        shell: bash
+        run: |
+          mkdir -p assets/screenshots
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          const url = process.env.SITE_URL;
+          (async () => {
+            const browser = await chromium.launch({headless:true});
+            for (const [name, width, height, mobile] of [
+              ['desktop',1440,900,false],
+              ['mobile',390,844,true]
+            ]) {
+              const context = await browser.newContext({
+                viewport:{width,height}, deviceScaleFactor:1,
+                isMobile:mobile, hasTouch:mobile
+              });
+              const page = await context.newPage();
+              try {
+                const response = await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
+                if (!response || response.status() >= 400) throw new Error('HTTP '+response?.status());
+                await page.waitForTimeout(2300);
+                for (const label of [/rejeitar não essenciais/i,/somente essenciais/i,/reject non-essential/i,/only essential/i]) {
+                  const btn=page.getByRole('button',{name:label}).first();
+                  try {if (await btn.isVisible({timeout:800})) {await btn.click({timeout:2500});break;}}
+                  catch(e) {}
+                }
+                await page.waitForTimeout(800);
+                await page.screenshot({path:`assets/screenshots/${name}-home.jpg`,type:'jpeg',quality:86,fullPage:false,animations:'disabled'});
+                if (name==='desktop') await page.screenshot({path:'assets/screenshots/desktop-fullpage.jpg',type:'jpeg',quality:72,fullPage:true,animations:'disabled'});
+                console.log('Captura',name,'OK',await page.title());
+              } finally {await context.close();}
+            }
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exitCode=1;});
+          NODE
+      - name: Publicar apenas as imagens no repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/screenshots/desktop-home.jpg assets/screenshots/mobile-home.jpg assets/screenshots/desktop-fullpage.jpg
+          if git diff --cached --quiet; then
+            echo "Imagens sem alteracoes."
+          else
+            git commit -m "assets: adiciona capturas reais desktop e mobile"
+            git push
+          fi
