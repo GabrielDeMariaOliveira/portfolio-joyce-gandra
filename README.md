@@ -12,7 +12,17 @@
 
 ## O projeto
 
-Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**. Trabalho entregue no contexto da **SiteAq**, com foco na apresentação digital da profissional.
+Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**, realizado no contexto da **SiteAq**. A presença digital apresenta a profissional, suas frentes de atendimento e os caminhos para contato.
+
+## O que o visitante encontra
+
+- **Apresentação profissional** com informações sobre abordagem e trajetória.
+- **Serviços organizados** em Psicologia Clínica, Psicologia do Esporte e Acompanhamento Perinatal.
+- **Atendimento online**, com informações sobre a modalidade de acompanhamento.
+- **Canais de contato** e acesso ao agendamento.
+- **Informações de privacidade e cookies** acessíveis no site.
+
+*As seções foram verificadas na versão pública. Isso não constitui teste de integrações ou fluxos de agendamento.*
 
 ## Participação
 
