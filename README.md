@@ -1,57 +1,46 @@
-# Joyce Gandra | Site Institucional de Psicologia
+<div align="center">
 
-**Projeto profissional de desenvolvimento web · SiteAq**
+<img alt="Capa gráfica do portfólio Joyce Gandra — não é captura do site" src="./assets/cover.svg" width="100%">
 
-[**Visualizar site publicado →**](https://psijoycegandra.com.br/)
+# Joyce Gandra | Psicologia
 
----
+**Site institucional · Projeto SiteAq**
 
-## Sobre o projeto
+[**Acessar site publicado ↗**](https://psijoycegandra.com.br/) · [**Perfil do desenvolvedor**](https://github.com/GabrielDeMariaOliveira)
 
-Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**, como parte dos projetos realizados pela **SiteAq**.
+</div>
 
-O objetivo desta documentação é apresentar o trabalho realizado e a experiência profissional envolvida em sua execução, preservando a confidencialidade do código-fonte e de eventuais informações internas do projeto.
+## O projeto
 
-## Minha participação
+Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**. Trabalho entregue no contexto da **SiteAq**, com foco na apresentação digital da profissional.
 
-**Gabriel De Maria Oliveira — Desenvolvimento técnico integral.**
+## Participação
 
-Fui responsável pelo processo de desenvolvimento do site. Meu sócio participou da **frente comercial**, do **atendimento à cliente** e da **estruturação inicial da ideia**.
+- **Gabriel De Maria Oliveira:** desenvolvimento técnico integral.
+- **Sócio da SiteAq:** relacionamento comercial, atendimento à cliente e participação na estruturação inicial da ideia.
 
-O projeto foi desenvolvido no contexto da **SiteAq**, com atribuições distintas e complementares entre os envolvidos.
+## Ficha rápida
 
-## Ficha do projeto
-
-| Informação | Descrição |
+| Área | Informação |
 | --- | --- |
-| Tipo | Site institucional |
 | Segmento | Psicologia |
-| Cliente | Joyce Gandra |
-| Desenvolvimento técnico | Gabriel De Maria Oliveira |
-| Atuação comercial e concepção inicial | Sócio da SiteAq |
-| Empresa responsável | SiteAq |
-| Situação | Projeto concluído |
-| Versão pública | [psijoycegandra.com.br](https://psijoycegandra.com.br/) |
+| Entrega | Site institucional concluído |
+| Desenvolvedor | Gabriel De Maria Oliveira |
+| Empresa | SiteAq |
+| Site publicado | [psijoycegandra.com.br](https://psijoycegandra.com.br/) |
 
-## Apresentação visual
+## Documentação técnica
 
-As capturas de tela para desktop e dispositivos móveis serão adicionadas ao portfólio **após validação e autorização para divulgação das imagens**.
+A stack e os detalhes de implementação serão incluídos após validação. Capturas reais de desktop e mobile também dependem de autorização para divulgação.
 
-## Tecnologias e decisões técnicas
-
-A descrição da stack, das funcionalidades e das decisões de implementação será incluída **somente após a validação técnica do projeto**. Este repositório não foi criado para reproduzir os arquivos de produção.
-
-## Confidencialidade
-
-> **Este é um repositório de portfólio, não um repositório de código-fonte.**
-
-O código-fonte, as configurações, as integrações, as credenciais e os arquivos internos do projeto **não são disponibilizados aqui**. O conteúdo público se limita à apresentação profissional e às informações autorizadas para divulgação.
-
-## Contato profissional
-
-**Desenvolvimento:** [Gabriel De Maria Oliveira](https://github.com/GabrielDeMariaOliveira)  
-**LinkedIn:** [Gabriel De Maria Oliveira](https://www.linkedin.com/in/gabriel-de-maria-oliveira/)
+> **Portfólio sem código-fonte:** este repositório apresenta o projeto profissional. Código, credenciais, integrações e arquivos internos permanecem privados.
 
 ---
 
-*Projeto realizado pela SiteAq. “Entendemos antes de construir.”*
+<div align="center">
+
+[**Voltar ao perfil**](https://github.com/GabrielDeMariaOliveira) · [**LinkedIn**](https://www.linkedin.com/in/gabriel-de-maria-oliveira/)
+
+<sub>A imagem de capa é uma ilustração de portfólio, não uma captura do site.</sub>
+
+</div>
