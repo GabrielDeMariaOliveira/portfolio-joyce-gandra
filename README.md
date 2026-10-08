@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="Capa gráfica do portfólio Joyce Gandra — não é captura do site" src="./assets/cover.svg" width="100%">
+<img alt="Captura real da página inicial do site em desktop" src="./assets/screenshots/desktop-home.jpg" width="100%">
 
 # Joyce Gandra | Psicologia
 
@@ -24,6 +24,19 @@ Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**, rea
 
 *As seções foram verificadas na versão pública. Isso não constitui teste de integrações ou fluxos de agendamento.*
 
+## Apresentação visual
+
+<div align="center">
+
+<a href="./assets/screenshots/mobile-home.jpg"><img alt="Captura real da versão mobile do site" src="./assets/screenshots/mobile-home.jpg" width="31%"></a>
+
+<br>
+<sub>Versão mobile do site · Captura real</sub>
+
+</div>
+
+**[Ver página completa no desktop ↗](./assets/screenshots/desktop-fullpage.jpg)**
+
 ## Participação
 
 - **Gabriel De Maria Oliveira:** desenvolvimento técnico integral.
@@ -41,7 +54,7 @@ Desenvolvimento de um site institucional para a psicóloga **Joyce Gandra**, rea
 
 ## Documentação técnica
 
-A stack e os detalhes de implementação serão incluídos após validação. Capturas reais de desktop e mobile também dependem de autorização para divulgação.
+A stack e os detalhes de implementação serão incluídos após validação. Capturas reais de desktop e mobile disponíveis acima, com autorização de divulgação confirmada.
 
 > **Portfólio sem código-fonte:** este repositório apresenta o projeto profissional. Código, credenciais, integrações e arquivos internos permanecem privados.
 
@@ -51,6 +64,6 @@ A stack e os detalhes de implementação serão incluídos após validação. Ca
 
 [**Voltar ao perfil**](https://github.com/GabrielDeMariaOliveira) · [**LinkedIn**](https://www.linkedin.com/in/gabriel-de-maria-oliveira/)
 
-<sub>A imagem de capa é uma ilustração de portfólio, não uma captura do site.</sub>
+<sub>Imagens reais do site publicado, capturadas automaticamente para este portfólio.</sub>
 
 </div>
